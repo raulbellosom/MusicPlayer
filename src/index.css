@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #4f46e5; /* Color de la pista */
+  height: 8px; /* Altura de la pista */
+  border-radius: 10px; /* Redondear los bordes */
+}
+
+input[type="range"]::-moz-range-track {
+  background: #4f46e5;
+  height: 8px;
+  border-radius: 10px;
+}
+
+input[type="range"]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+  height: 8px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Quitar el estilo por defecto en Webkit */
+  appearance: none;
+  background: #ef4444; /* Color del thumb */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; /* Hacer el thumb redondo */
+  cursor: pointer;
+  display: hidden;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background: #ef4444;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: hidden;
+}
+
+input[type="range"]::-ms-thumb {
+  background: #ef4444;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: hidden;
+}
+
+input[type="range"] {
+  -webkit-appearance: none; /* Quitar estilo por defecto */
+  appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: linear-gradient(
+    to right,
+    #4f46e5 0%,
+    #4f46e5 var(--progress),
+    #d1d5db var(--progress),
+    #d1d5db 100%
+  );
+}
+
+input[type="range"]::-moz-range-progress {
+  background: #4f46e5;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: #4f46e5;
+}
+
+input[type="range"]::-ms-fill-upper {
+  background: #d1d5db;
+}
